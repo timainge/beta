@@ -2,7 +2,10 @@
 {{!-- The tag above means - insert everything in this file into the {body} of the default.hbs template --}}
 
 {{!-- The big featured header --}}
-<header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+
+
+
+<!-- <header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
     <nav class="main-nav overlay clearfix">
         {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>{{/if}}
         {{#if @blog.navigation}}
@@ -16,12 +19,38 @@
         </div>
     </div>
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-</header>
+</header> -->
+
+
+<div class="hero row">
+  <div class="col-sm-3">
+    <p class="hr hidden-xs">&ndash;&ndash;&ndash;</p>
+    <h1 class="compact">Hi, I'm Tim Ainge.</h1>
+    <h2 class="compact">I'm a tech guy.</h2>
+  </div>
+  <div class="col-sm-9">
+    <p class="hr">&ndash;&ndash;&ndash;</p>
+    <h3 class="">I think, design and code to solve difficult and important problems.</h3>
+  </div>
+</div>
+
+
+
 
 {{!-- The main content area on the homepage --}}
-<main id="content" class="content" role="main">
+<main id="content" class="content loop row" role="main">
+  <div class="col-xs-12">
+    <p class="hr">&ndash;&ndash;&ndash;</p>
+  </div>
 
     {{!-- The tag below includes the post loop - partials/loop.hbs --}}
     {{> "loop"}}
+
+    <div class="col-xs-12">
+      {{!-- Previous/next page links - displayed on every page --}}
+      <p>{{pagination}}</p>
+      <!-- <p class="hr">&ndash;&ndash;&ndash;</p> -->
+    </div>
+
 
 </main>

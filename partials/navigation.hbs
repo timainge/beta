@@ -1,17 +1,19 @@
-<div class="nav">
-    <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
-        <span class="hidden">Close</span>
-    </a>
-    <ul>
-        {{#foreach navigation}}
-            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}"><a href="{{url absolute="true"}}">{{label}}</a></li>
-        {{/foreach}}
-    </ul>
-    {{#if @labs.subscribers}}
-        <a class="subscribe-button" href="{{@blog.url}}/subscribe/">Subscribe</a>
-    {{else}}
-        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
-    {{/if}}
+<div class="main-nav">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 hidden-xs">
+        <a href="{{@blog.url}}" class="logotype">timainge.io</a>
+      </div>
+      <div class="col-sm-6">
+        <nav>
+          {{#foreach navigation}}
+              <a class="nav-{{slug}}{{#if current}} nav-current{{/if}}" href="{{url absolute="true"}}">{{label}}</a>
+          {{/foreach}}
+        </nav>
+      </div>
+      <div class="col-sm-3 hidden-xs contacts">
+        <p class="compact">{{> social}}</p>
+      </div>
+    </div>
+  </div>
 </div>
-<span class="nav-cover"></span>
