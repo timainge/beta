@@ -2511,6 +2511,9 @@ input[type=email] {
   background: transparent;
   margin-bottom: 10px;
   line-height: 20px; }
+  input[type=email]:focus {
+    outline: none;
+    border-bottom: 2px solid #aaa; }
 
 h1 {
   color: #555;
@@ -2608,6 +2611,20 @@ p.hr {
   margin: 0 !important; }
   .compact.subscribe {
     padding-top: 6px; }
+
+input.button {
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #555;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  line-height: 20px; }
+  input.button:hover {
+    color: #f2f2f2;
+    background: pink; }
 
 @media (max-width: 766px) {
   .main-nav {
