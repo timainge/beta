@@ -2463,7 +2463,6 @@ body {
   margin: 0; }
 
 .container {
-  background: #f2f2f2;
   min-height: 100%;
   max-width: 1200px; }
   .container.main {
@@ -2474,7 +2473,7 @@ body {
   top: 0px;
   width: 100%;
   padding: 3rem 0;
-  background: #f2f2f2;
+  background: rgba(242, 242, 242, 0.98);
   z-index: 100;
   height: 140px; }
   .main-nav a {
@@ -2491,6 +2490,12 @@ body {
 
 .loop.row {
   padding-top: 80px; }
+  .loop.row article .image-swapper {
+    background-image: url("../writer.jpg");
+    background-position: center center;
+    background-clip: border-box;
+    background-size: cover;
+    padding-bottom: 50%; }
 
 .container.footer {
   padding-top: 100px;

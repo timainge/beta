@@ -9,6 +9,7 @@
 // $light:rgb(237,237,237);
 // $light:rgb(246, 244, 238);
 $light:rgb(242,242,242);
+$semi-light:rgba(242,242,242,0.98);
 
 
 $dark:rgb(57, 46, 44);
@@ -27,7 +28,7 @@ body{
 }
 
 .container{
-  background:$light;
+  // background:$light;
   min-height: 100%;
   max-width: 1200px;
 
@@ -42,7 +43,7 @@ body{
   top:0px;
   width:100%;
   padding:3rem 0;
-  background: $light;
+  background: $semi-light;
   z-index: 100;
   height:140px;
 
@@ -71,7 +72,11 @@ body{
 
   article{
     .image-swapper{
-
+      background-image: url('../writer.jpg');
+      background-position: center center;
+      background-clip: border-box;
+      background-size: cover;
+      padding-bottom: 50%;
     }
   }
 }
