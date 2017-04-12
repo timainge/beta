@@ -2490,12 +2490,17 @@ body {
 
 .loop.row {
   padding-top: 80px; }
-  .loop.row article .image-swapper {
-    background-image: url("../writer.jpg");
-    background-position: center center;
-    background-clip: border-box;
-    background-size: cover;
-    padding-bottom: 50%; }
+  .loop.row article {
+    margin-bottom: 40px; }
+    .loop.row article .image-swapper {
+      background-image: url("../writer.jpg");
+      background-position: center center;
+      background-clip: border-box;
+      background-size: cover;
+      padding-bottom: 50%;
+      opacity: 0.5; }
+      .loop.row article .image-swapper:hover {
+        opacity: 1; }
 
 .container.footer {
   padding-top: 100px;
@@ -2574,7 +2579,8 @@ p {
   max-width: 60rem;
   font-size: 16px;
   line-height: 28px;
-  letter-spacing: 0.31px; }
+  letter-spacing: 0.31px;
+  margin: 18px 0; }
 
 a {
   color: #555;
@@ -2591,7 +2597,7 @@ a {
   color: #000;
   text-decoration: none; }
   a:hover {
-    color: pink;
+    color: #FD7454;
     text-decoration: none; }
 
 p.hr {
@@ -2629,7 +2635,7 @@ input.button {
   line-height: 20px; }
   input.button:hover {
     color: #f2f2f2;
-    background: pink; }
+    background: #FD7454; }
 
 @media (max-width: 766px) {
   .main-nav {

@@ -16,7 +16,7 @@ $dark:rgb(57, 46, 44);
 $super-dark:#000;
 $text:#555;
 $emphasis:#000;
-$brand-color:pink;
+$brand-color:#FD7454;
 
 
 $serif:'PT Serif', serif;
@@ -71,12 +71,19 @@ body{
   padding-top: 80px;
 
   article{
+    margin-bottom: 40px;
+
     .image-swapper{
       background-image: url('../writer.jpg');
       background-position: center center;
       background-clip: border-box;
       background-size: cover;
       padding-bottom: 50%;
+      opacity:0.5;
+
+      &:hover{
+        opacity:1;
+      }
     }
   }
 }
@@ -155,6 +162,7 @@ p{
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.31px;
+    margin:18px 0;
   }
 
 }
@@ -168,6 +176,7 @@ a{
     color: $brand-color;
     text-decoration: none;
   }
+
 }
 
 p.hr{
