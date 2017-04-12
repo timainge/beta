@@ -2498,7 +2498,8 @@ body {
       background-clip: border-box;
       background-size: cover;
       padding-bottom: 50%;
-      opacity: 0.5; }
+      opacity: 0.5;
+      transition: opacity 0.25s ease; }
       .loop.row article .image-swapper:hover {
         opacity: 1; }
 
