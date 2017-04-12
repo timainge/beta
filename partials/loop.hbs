@@ -8,13 +8,17 @@
 
 
 <article class="preview col-sm-6 col-md-6 col-lg-3 col-xs-12 {{post_class}}">
-  <div class="image-swapper"style=" {{#if image}} background-image:url({{image}}) {{/if}}">
-    <!-- <img src="{{image}}" alt=""> -->
-  </div>
-  <h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
-  <p class="post-excerpt">{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+  <a class="read-more" href="{{url}}">
+    <div class="image-swapper"style=" {{#if image}} background-image:url({{image}}) {{/if}}">
+      <!-- <img src="{{image}}" alt=""> -->
+    </div>
+  </a>
 
-  <p class="hr visible-xx">&ndash;&ndash;&ndash;</p>
+  <h1 class="post-title"><a href="{{url}}">{{title}}</a></h1>
+
+  <p class="post-excerpt">{{excerpt words="26"}} <a href="{{url}}"> &raquo;</a></p>
+
+  <!-- <p class="hr visible-xx">&ndash;&ndash;&ndash;</p> -->
 
 </article>
 
